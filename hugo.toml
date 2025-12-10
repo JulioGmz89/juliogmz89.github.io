@@ -17,6 +17,7 @@ theme = 'blowfish'
   [params.homepage]
     layout = 'background'
     showRecent = true
+    cardView = false
 
   [params.author]
     name = "Julio César Gómez González"
@@ -24,7 +25,7 @@ theme = 'blowfish'
     headline = "Software Engineer"
     links = [
       { github = "https://github.com/JulioGmz89" },
-      { linkedin = "https://linkedin.com/in/YOUR-LINKEDIN-USERNAME" },
+      { linkedin = "https://www.linkedin.com/in/juliogmz89/" },
     ]
 
 [menu]
