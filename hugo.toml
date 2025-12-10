@@ -1,0 +1,35 @@
+baseURL = 'https://juliogmz89.github.io/'
+languageCode = 'en-us'
+title = 'Julio Gomez | Gameplay & Network Engineer'
+theme = 'blowfish'
+
+[params]
+  colorScheme = 'terminal'
+  defaultTheme = 'dark'
+  
+  [params.header]
+    layout = 'fixed'
+
+  [params.footer]
+    showScrollToTop = true
+
+  [params.homepage]
+    layout = 'hero'
+    showRecent = true
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 20
+  [[menu.main]]
+    identifier = "posts"
+    name = "Blog"
+    url = "/posts/"
+    weight = 30
