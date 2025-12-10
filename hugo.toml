@@ -1,11 +1,12 @@
 baseURL = 'https://juliogmz89.github.io/'
 languageCode = 'en-us'
-title = 'Julio Gomez | Gameplay & Network Engineer'
+title = 'Julio César Gómez González '
 theme = 'blowfish'
 
 [params]
-  colorScheme = 'terminal'
+  colorScheme = 'noir'
   defaultTheme = 'dark'
+  logo = "images/gosh-rat/gosh-rat-face-background-128.png"
   
   [params.header]
     layout = 'fixed'
@@ -14,8 +15,17 @@ theme = 'blowfish'
     showScrollToTop = true
 
   [params.homepage]
-    layout = 'hero'
+    layout = 'background'
     showRecent = true
+
+  [params.author]
+    name = "Julio César Gómez González"
+    image = "images/gosh-rat/gosh-rat-background.png"
+    headline = "Software Engineer"
+    links = [
+      { github = "https://github.com/JulioGmz89" },
+      { linkedin = "https://linkedin.com/in/YOUR-LINKEDIN-USERNAME" },
+    ]
 
 [menu]
   [[menu.main]]
