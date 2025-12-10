@@ -1,5 +1,5 @@
 +++
-date = '2025-12-09T22:20:03-06:00'
+date = '2020-02-01T00:00:00-06:00'
 draft = false
 title = 'I Want My Toys'
 summary = "A commercially successful P2P multiplayer game focusing on networking and gameplay engineering."

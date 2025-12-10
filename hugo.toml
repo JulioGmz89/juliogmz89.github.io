@@ -7,6 +7,7 @@ theme = 'blowfish'
   colorScheme = 'noir'
   defaultTheme = 'dark'
   logo = "images/gosh-rat/gosh-rat-face-background-128.png"
+  dateFormat = "2006"
   
   [params.header]
     layout = 'fixed'
