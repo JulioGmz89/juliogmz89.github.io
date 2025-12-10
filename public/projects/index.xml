@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Julio Gomez | Gameplay &amp; Network Engineer</title>
-    <link>http://localhost:1313/projects/</link>
+    <link>http://localhost:63844/projects/</link>
     <description>Recent content in Projects on Julio Gomez | Gameplay &amp; Network Engineer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Tue, 09 Dec 2025 22:20:03 -0600</lastBuildDate><atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Dec 2025 22:20:03 -0600</lastBuildDate><atom:link href="http://localhost:63844/projects/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>I Want My Toys</title>
-      <link>http://localhost:1313/projects/i-want-my-toys/</link>
+      <link>http://localhost:63844/projects/i-want-my-toys/</link>
       <pubDate>Tue, 09 Dec 2025 22:20:03 -0600</pubDate>
       
-      <guid>http://localhost:1313/projects/i-want-my-toys/</guid>
+      <guid>http://localhost:63844/projects/i-want-my-toys/</guid>
       <description>A commercially successful P2P multiplayer game focusing on networking and gameplay engineering.</description>
       
     </item>
     
     <item>
       <title>Mayhem Superstars</title>
-      <link>http://localhost:1313/projects/mayhem-superstars/</link>
+      <link>http://localhost:63844/projects/mayhem-superstars/</link>
       <pubDate>Tue, 09 Dec 2025 22:20:03 -0600</pubDate>
       
-      <guid>http://localhost:1313/projects/mayhem-superstars/</guid>
+      <guid>http://localhost:63844/projects/mayhem-superstars/</guid>
       <description>Scalable netcode implementation for high-entity-count multiplayer scenarios.</description>
       
     </item>
     
     <item>
       <title>Tools &amp; Engine Utilities</title>
-      <link>http://localhost:1313/projects/tools-toolkit/</link>
+      <link>http://localhost:63844/projects/tools-toolkit/</link>
       <pubDate>Tue, 09 Dec 2025 22:20:03 -0600</pubDate>
       
-      <guid>http://localhost:1313/projects/tools-toolkit/</guid>
+      <guid>http://localhost:63844/projects/tools-toolkit/</guid>
       <description>A collection of developer tools including Red Nacho (MVVM) and Chatterbox (AI).</description>
       
     </item>
     
     <item>
       <title>Zero Gravity 6-DOF</title>
-      <link>http://localhost:1313/projects/zero-gravity/</link>
+      <link>http://localhost:63844/projects/zero-gravity/</link>
       <pubDate>Tue, 09 Dec 2025 22:20:03 -0600</pubDate>
       
-      <guid>http://localhost:1313/projects/zero-gravity/</guid>
+      <guid>http://localhost:63844/projects/zero-gravity/</guid>
       <description>A physics-based 6-DOF controller showcasing advanced vector math and projection techniques.</description>
       
     </item>

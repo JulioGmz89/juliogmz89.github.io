@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tools on Julio Gomez | Gameplay &amp; Network Engineer</title>
-    <link>http://localhost:1313/tags/tools/</link>
+    <link>http://localhost:63844/tags/tools/</link>
     <description>Recent content in Tools on Julio Gomez | Gameplay &amp; Network Engineer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Tue, 09 Dec 2025 22:20:03 -0600</lastBuildDate><atom:link href="http://localhost:1313/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Dec 2025 22:20:03 -0600</lastBuildDate><atom:link href="http://localhost:63844/tags/tools/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Tools &amp; Engine Utilities</title>
-      <link>http://localhost:1313/projects/tools-toolkit/</link>
+      <link>http://localhost:63844/projects/tools-toolkit/</link>
       <pubDate>Tue, 09 Dec 2025 22:20:03 -0600</pubDate>
       
-      <guid>http://localhost:1313/projects/tools-toolkit/</guid>
+      <guid>http://localhost:63844/projects/tools-toolkit/</guid>
       <description>A collection of developer tools including Red Nacho (MVVM) and Chatterbox (AI).</description>
       
     </item>
