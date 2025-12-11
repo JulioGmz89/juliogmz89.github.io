@@ -18,7 +18,17 @@ theme = 'blowfish'
   [params.homepage]
     layout = 'background'
     showRecent = true
-    cardView = false
+    cardView = true
+    cardViewScreenWidth = false
+
+  [params.article]
+    showTaxonomies = true
+    showHero = true
+    heroStyle = "background"
+
+  [params.list]
+    showCards = true
+    cardView = true
 
   [params.author]
     name = "Julio César Gómez González"

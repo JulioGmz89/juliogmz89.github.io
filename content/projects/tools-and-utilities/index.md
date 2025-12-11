@@ -3,7 +3,7 @@ date = '2025-12-09T22:20:03-06:00'
 draft = false
 title = 'Tools & Utilities'
 summary = "A collection of developer tools including Red Nacho (MVVM) and Chatterbox (AI)."
-tags = ["Tools", "MVVM", "AI", "Editor Extensions"]
+tags = ["Tools", "MVVM", "AI"]
 +++
 
 ## Overview

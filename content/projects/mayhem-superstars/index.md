@@ -1,9 +1,9 @@
 +++
-date = '2025-12-09T22:20:03-06:00'
+date = '2023-12-09T22:20:03-06:00'
 draft = false
 title = 'Mayhem Superstars'
 summary = "Scalable netcode implementation for high-entity-count multiplayer scenarios."
-tags = ["Netcode", "Scalability", "Multiplayer"]
+tags = ["Unity", "Netcode", "Multiplayer", "Game Design"]
 +++
 
 ## Overview

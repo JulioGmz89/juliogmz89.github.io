@@ -3,7 +3,7 @@ date = '2025-12-09T22:20:03-06:00'
 draft = false
 title = 'Zero Gravity 6-DOF'
 summary = "A physics-based 6-DOF controller showcasing advanced vector math and projection techniques."
-tags = ["Physics", "Math", "Unity", "6-DOF"]
+tags = ["Unity", "6-DOF", "Physics", "Math"]
 +++
 
 ## Overview

@@ -3,7 +3,7 @@ date = '2020-02-01T00:00:00-06:00'
 draft = false
 title = 'I Want My Toys'
 summary = "A commercially successful P2P multiplayer game focusing on networking and gameplay engineering."
-tags = ["Networking", "P2P", "Unity", "C#"]
+tags = ["Unity", "Photon", "Multiplayer"]
 +++
 
 ## Overview
