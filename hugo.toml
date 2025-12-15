@@ -3,11 +3,16 @@ languageCode = 'en-us'
 title = 'Julio César Gómez González '
 theme = 'blowfish'
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [params]
   colorScheme = 'noir'
   defaultTheme = 'dark'
   logo = "images/gosh-rat/gosh-rat-face-background-128.png"
   dateFormat = "2006"
+  enableSearch = true
+  defaultBackgroundImage = "images/background/homepage-background.jpg"
   
   [params.header]
     layout = 'fixed'
@@ -17,15 +22,15 @@ theme = 'blowfish'
 
   [params.homepage]
     layout = 'background'
+    homepageImage = "images/background/homepage-background.jpg"
     showRecent = true
     cardView = true
     cardViewScreenWidth = false
 
   [params.article]
     showTaxonomies = true
-    showHero = true
-    heroStyle = "background"
-
+    showHero = false
+    
   [params.list]
     showCards = true
     cardView = true
