@@ -10,7 +10,7 @@ draft = false
 
 # Julio César Gómez González
 
-**Software Engineer | Game Developer | AI-Augmented Developer**  
+**Software Engineer | Game Developer**  
 [julio.gomez3250@outlook.com](mailto:julio.gomez3250@outlook.com) | +52 (771) 144 0272  
 [Linkedin: /in/JulioGmz89](https://www.linkedin.com/in/JulioGmz89) | [Github: JulioGmz89](https://github.com/JulioGmz89)
 
