@@ -5,9 +5,12 @@ date = '2025-12-09T22:30:00-06:00'
 draft = false
 +++
 
-{{< button href="/resume/Julio_Gomez_Resume.pdf" target="_blank" >}}
-Download Resume (PDF)
-{{< /button >}}<br>
+
+<div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+	{{< button href="/resume/Julio_Gomez_Resume.pdf" target="_blank" >}}
+	Download Resume (PDF)
+	{{< /button >}}
+</div>
 
 # Julio César Gómez González
 
