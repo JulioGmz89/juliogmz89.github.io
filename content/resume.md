@@ -17,7 +17,7 @@ draft = false
 ## TECHNICAL SKILLS
 
 *   **Core Languages:** C#, C++, Java, Python, JavaScript, PL/SQL.
-*   **Game Development:** Unity, Unreal Engine, Photon (P2P), Netcode for GameObjects, Physics Simulation (Newtonian/Kinematic), HLSL.
+*   **Game Development:** Unity, Unreal Engine, Photon (P2P), Netcode for GameObjects.
 *   **Enterprise & Web:** .NET Ecosystem, React, REST APIs, MVVM Pattern, Oracle Database, HTML/CSS/Bootstrap, WordPress.
 *   **Tools & DevOps:** Git (Version Control), Jira, CI/CD Pipelines, Figma, Adobe Suite.
 *   **AI & Productivity:** Prompt Engineering, GitHub Copilot, LLM-Integration (Gemini/OpenAI APIs), AI-Assisted Architecture.
@@ -53,7 +53,7 @@ draft = false
 *   **Multiplayer Engineering:** Architected an online multiplayer system from the ground up using Unity's Netcode for GameObjects.
 *   **Gameplay Systems:** Delivered foundational networking logic to support a high-intensity bullet-hell experience, synchronizing hundreds of projectiles with minimal latency.
 
-## SOFTWARE ENGINEERING & AI PROJECTS
+<!-- ## SOFTWARE ENGINEERING & AI PROJECTS
 
 ### RED NACHO TOOLKIT | C#, .NET MAUI/WPF (Cross-Platform)
 
@@ -63,7 +63,7 @@ draft = false
 ### CHATTERBOX MOCKER | React, AI-Augmented Workflow
 
 *   **AI-Driven Development:** Leveraged Gemini 2.5 Pro and Windsurf to accelerate the SDLC of a full-stack WhatsApp mockup tool.
-*   **Outcome:** Utilized LLMs for high-level architectural planning and component generation.
+*   **Outcome:** Utilized LLMs for high-level architectural planning and component generation. -->
 
 ## EDUCATION
 

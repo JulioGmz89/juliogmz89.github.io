@@ -32,7 +32,7 @@ The twist: you're building the stage your opponents must survive, creating a str
 
 ## My Contributions
 
-My primary focus was defining the technical architecture, establishing development standards, and engineering the multiplayer networking logic to ensure low-latency gameplay.
+My primary focus was work allong side a team and define the technical architecture, following development standards, and engineering the multiplayer networking logic to ensure low-latency gameplay.
 
 ---
 
