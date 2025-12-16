@@ -10,7 +10,7 @@ tags = ["Unity", "C#", "Multiplayer", "Game Jam"]
 
 **I Want My Toys** is a multiplayer game originally created during a game jam sponsored by **TLM Partners**. Our team won the competition, and the company acquired the idea to continue development professionally.
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148646?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+{{< vimeo-bg 1147148646 >}}
 
 ---
 

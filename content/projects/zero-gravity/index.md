@@ -25,7 +25,7 @@ The movement system aims to provide players with a "floaty" sensation while enab
 
 The camera features a subtle but noticeable drag effect that enhances the low-gravity feel. This drag is also visible when the player rolls on their Y rotation, creating an immersive weightless experience.
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148473?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+{{< vimeo-bg 1147148473 >}}
 
 ---
 
@@ -42,7 +42,7 @@ To enable climbing on any surface and at any angle, as well as seamless transiti
 
 Basic climbing movement on a 3D rectangle demonstrates the core mechanics:
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148440?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+{{< vimeo-bg 1147148440 >}}
 
 ### Curved Surface Navigation
 
@@ -55,19 +55,19 @@ Navigating curved surfaces required a dedicated curvature detection system.
 
 Complex curved geometry like a torus showcases the adaptive surface detection:
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148368?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+{{< vimeo-bg 1147148368 >}}
 
 #### Climbing on a Sphere
 
 Smooth navigation across a spherical surface:
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148319?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+{{< vimeo-bg 1147148319 >}}
 
 #### Climbing Inside a Pipe
 
 Demonstrating correct concave angle detection and seamless transitions inside a pipe:
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148276?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+{{< vimeo-bg 1147148276 >}}
 
 ### Camera System
 
@@ -85,31 +85,31 @@ Demonstrating correct concave angle detection and seamless transitions inside a 
 
 The extendable hand mechanic and pull system in action:
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148257?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+{{< vimeo-bg 1147148257 >}}
 
 #### Grabbing While Climbing
 
 The grabbing mechanic integrates seamlessly with climbing mode:
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148179?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+{{< vimeo-bg 1147148179 >}}
 
 #### Grabbing in Zero-G Mode
 
 Using the grab mechanic while floating in zero gravity:
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148034?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+{{< vimeo-bg 1147148034 >}}
 
 #### Grabbing + Jumping Interactions
 
 The grabbing/pull mechanic combined with jumping creates fun force-based interactions:
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148120?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+{{< vimeo-bg 1147148120 >}}
 
 ### Jumping Across Objects
 
 Jumping movement across multiple climbing objects demonstrates the seamless state transitions:
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147147947?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+{{< vimeo-bg 1147147947 >}}
 
 ---
 
@@ -131,11 +131,11 @@ Custom gizmos were developed to visualize the system's internal logic:
 
 Visualization on a 3D rectangle:
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148559?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+{{< vimeo-bg 1147148559 >}}
 
 #### Debug Gizmos on Low-Poly Sphere
 
 Visualization showing surface normal smoothing on a low-poly sphere:
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148571?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+{{< vimeo-bg 1147148571 >}}
 
