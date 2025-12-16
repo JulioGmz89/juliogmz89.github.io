@@ -16,7 +16,7 @@ layout = 'simple'
 	{{< /button >}}
 </div>
 
-Hi! I'm **Julio César Gómez González**, a passionate Software Engineer and game developer based in Mexico. I graduated with a B.S. in Computer Science and Technology from Tecnológico de Monterrey, where I also completed a minor in Video Game Design for Engineering.
+Hi! I'm **Julio César Gómez**, a passionate Software Engineer and game developer. I graduated with a B.S. in Computer Science and Technology from Tecnológico de Monterrey, where I also completed a minor in Video Game Design for Engineering.
 
 Currently, I work as a full stack developer at Tata Consultancy Services, specializing in .NET applications and Oracle Database infrastructure. My professional journey has given me a strong foundation in enterprise software.
 
