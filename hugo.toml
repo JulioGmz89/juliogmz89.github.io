@@ -43,7 +43,7 @@ theme = 'blowfish'
   [params.author]
     name = "Julio César Gómez González"
     image = "images/gosh-rat/gosh-rat-background.png"
-    headline = "Software Engineer"
+    headline = "Software Engineer | Game Developer"
     links = [
       { github = "https://github.com/JulioGmz89" },
       { linkedin = "https://www.linkedin.com/in/juliogmz89/" },

@@ -5,8 +5,9 @@ date = '2025-12-09T22:30:00-06:00'
 draft = false
 +++
 
-> [!IMPORTANT]
-> **[Download Resume (PDF)](/resume/resume.pdf)**
+{{< button href="/resume/Julio_Gomez_Resume.pdf" target="_blank" >}}
+Download Resume (PDF)
+{{< /button >}}<br>
 
 # Julio César Gómez González
 
@@ -21,6 +22,7 @@ draft = false
 *   **Enterprise & Web:** .NET Ecosystem, React, REST APIs, MVVM Pattern, Oracle Database, HTML/CSS/Bootstrap, WordPress.
 *   **Tools & DevOps:** Git (Version Control), Jira, CI/CD Pipelines, Figma, Adobe Suite.
 *   **AI & Productivity:** Prompt Engineering, GitHub Copilot, LLM-Integration (Gemini/OpenAI APIs), AI-Assisted Architecture.
+<br>
 
 ## PROFESSIONAL EXPERIENCE
 
@@ -31,6 +33,7 @@ draft = false
 *   **End-to-End Delivery:** Engineered the complete software delivery process, moving features from requirements gathering and story point estimation (Jira) to implementation (C#/.NET) and production deployment.
 *   **Modernization & Architecture:** Architected key modernizations to meet enterprise security standards, including the integration of SFTP transfer protocols and ensuring compatibility with upgraded Oracle database environments. 
 *   **Incident Management:** Led a multi-team debugging effort to resolve a critical production failure post-rollback. Identified the root cause within a complex database package and deployed a fix, restoring 100% application stability with zero data loss.
+<br>
 
 ## GAME DEVELOPMENT PROJECTS
 
@@ -52,28 +55,17 @@ draft = false
 
 *   **Multiplayer Engineering:** Architected an online multiplayer system from the ground up using Unity's Netcode for GameObjects.
 *   **Gameplay Systems:** Delivered foundational networking logic to support a high-intensity bullet-hell experience, synchronizing hundreds of projectiles with minimal latency.
-
-<!-- ## SOFTWARE ENGINEERING & AI PROJECTS
-
-### RED NACHO TOOLKIT | C#, .NET MAUI/WPF (Cross-Platform)
-
-*   **Architecture:** Architected a scalable productivity suite targeting Windows (MSIX) and Android, utilizing the MVVM pattern for strict separation of concerns and testability.
-*   **Platform Integration:** Implemented platform-specific handlers, such as WebView2 for Windows PDF generation.
-
-### CHATTERBOX MOCKER | React, AI-Augmented Workflow
-
-*   **AI-Driven Development:** Leveraged Gemini 2.5 Pro and Windsurf to accelerate the SDLC of a full-stack WhatsApp mockup tool.
-*   **Outcome:** Utilized LLMs for high-level architectural planning and component generation. -->
+<br>
 
 ## EDUCATION
 
-### Tecnológico de Monterrey | Querétaro, México
-**Bachelor of Science in Computer Science and Technology**
+**Tecnológico de Monterrey | Querétaro, México**
+Bachelor of Science in Computer Science and Technology
 
-### Tecnológico de Monterrey | Monterrey, México
-**Minor in Video Game Design for Engineering**
+**Tecnológico de Monterrey | Monterrey, México**
+Minor in Video Game Design for Engineering
 
-## CERTIFICATIONS
+### CERTIFICATIONS
 
 *   Career Essentials in GitHub Copilot (GitHub)
 *   Building AI Products: Prototyping Essentials (LinkedIn Learning)
