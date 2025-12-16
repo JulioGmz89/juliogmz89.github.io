@@ -16,7 +16,7 @@ View on itch.io
 
 **Mayhem Superstars** is a chaotic multiplayer party game where up to 4 players compete in survival rounds. The core twist is the "Phase of Ideation": between combat rounds, players choose between powering up their character or placing permanent hazards (traps, turrets, environmental dangers) in the arena. The goal is to survive the bullet-hell chaos you and your friends created.
 
-<video src="/videos/mayhem-superstars/mayhem-superstars-video.mp4" autoplay loop muted playsinline style="width: 100%; border-radius: 8px;"></video>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148589?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
 ### Core Concept
 

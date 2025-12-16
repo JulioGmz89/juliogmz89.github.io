@@ -25,7 +25,7 @@ The movement system aims to provide players with a "floaty" sensation while enab
 
 The camera features a subtle but noticeable drag effect that enhances the low-gravity feel. This drag is also visible when the player rolls on their Y rotation, creating an immersive weightless experience.
 
-<video src="/videos/zero-gravity/zerog-camera-demo-video.mp4" autoplay loop muted playsinline style="width: 100%; border-radius: 8px;"></video>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148473?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
 ---
 
@@ -42,7 +42,7 @@ To enable climbing on any surface and at any angle, as well as seamless transiti
 
 Basic climbing movement on a 3D rectangle demonstrates the core mechanics:
 
-<video src="/videos/zero-gravity/climbing-video-1.mp4" autoplay loop muted playsinline style="width: 100%; border-radius: 8px;"></video>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148440?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
 ### Curved Surface Navigation
 
@@ -55,19 +55,19 @@ Navigating curved surfaces required a dedicated curvature detection system.
 
 Complex curved geometry like a torus showcases the adaptive surface detection:
 
-<video src="/videos/zero-gravity/climbing-video-2-torus.mp4" autoplay loop muted playsinline style="width: 100%; border-radius: 8px;"></video>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148368?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
 #### Climbing on a Sphere
 
 Smooth navigation across a spherical surface:
 
-<video src="/videos/zero-gravity/climbing-video-3-sphere.mp4" autoplay loop muted playsinline style="width: 100%; border-radius: 8px;"></video>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148319?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
 #### Climbing Inside a Pipe
 
 Demonstrating correct concave angle detection and seamless transitions inside a pipe:
 
-<video src="/videos/zero-gravity/climbing-video-4-pipe.mp4" autoplay loop muted playsinline style="width: 100%; border-radius: 8px;"></video>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148276?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
 ### Camera System
 
@@ -85,31 +85,31 @@ Demonstrating correct concave angle detection and seamless transitions inside a 
 
 The extendable hand mechanic and pull system in action:
 
-<video src="/videos/zero-gravity/grabbing-video-1.mp4" autoplay loop muted playsinline style="width: 100%; border-radius: 8px;"></video>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148257?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
 #### Grabbing While Climbing
 
 The grabbing mechanic integrates seamlessly with climbing mode:
 
-<video src="/videos/zero-gravity/climbing-grabbing-video-different-hands.mp4" autoplay loop muted playsinline style="width: 100%; border-radius: 8px;"></video>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148179?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
 #### Grabbing in Zero-G Mode
 
 Using the grab mechanic while floating in zero gravity:
 
-<video src="/videos/zero-gravity/grabbing-zerog-video-1.mp4" autoplay loop muted playsinline style="width: 100%; border-radius: 8px;"></video>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148034?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
 #### Grabbing + Jumping Interactions
 
 The grabbing/pull mechanic combined with jumping creates fun force-based interactions:
 
-<video src="/videos/zero-gravity/grabbing-pulling-video-1.mp4" autoplay loop muted playsinline style="width: 100%; border-radius: 8px;"></video>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148120?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
 ### Jumping Across Objects
 
 Jumping movement across multiple climbing objects demonstrates the seamless state transitions:
 
-<video src="/videos/zero-gravity/jumping-video-1.mp4" autoplay loop muted playsinline style="width: 100%; border-radius: 8px;"></video>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147147947?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
 ---
 
@@ -131,11 +131,11 @@ Custom gizmos were developed to visualize the system's internal logic:
 
 Visualization on a 3D rectangle:
 
-<video src="/videos/zero-gravity/OrbitaFix_Debug1.mp4" autoplay loop muted playsinline style="width: 100%; border-radius: 8px;"></video>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148559?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
 #### Debug Gizmos on Low-Poly Sphere
 
 Visualization showing surface normal smoothing on a low-poly sphere:
 
-<video src="/videos/zero-gravity/OrbitaFix_Debug2.mp4" autoplay loop muted playsinline style="width: 100%; border-radius: 8px;"></video>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1147148571?background=1&autoplay=1&loop=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:8px;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 
