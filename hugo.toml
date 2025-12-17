@@ -1,7 +1,23 @@
 baseURL = 'https://juliogmz89.github.io/'
-languageCode = 'en-us'
-title = 'Julio César Gómez González '
 theme = 'blowfish'
+defaultContentLanguage = 'en'
+
+[languages]
+  [languages.en]
+    languageCode = 'en'
+    languageName = 'English'
+    weight = 1
+    title = 'Julio César Gómez González'
+    [languages.en.params]
+      displayName = 'English'
+
+  [languages.es]
+    languageCode = 'es'
+    languageName = 'Español'
+    weight = 2
+    title = 'Julio César Gómez González'
+    [languages.es.params]
+      displayName = 'Español'
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -49,24 +65,46 @@ theme = 'blowfish'
       { linkedin = "https://www.linkedin.com/in/juliogmz89/" },
     ]
 
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
-  [[menu.main]]
-    identifier = "projects"
-    name = "Projects"
-    url = "/projects/"
-    weight = 20
-  [[menu.main]]
-    identifier = "posts"
-    name = "Blog"
-    url = "/posts/"
-    weight = 30
-  [[menu.main]]
-    identifier = "resume"
-    name = "Resume"
-    url = "/resume/"
-    weight = 40
+# English Menu
+[[languages.en.menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 10
+[[languages.en.menu.main]]
+  identifier = "projects"
+  name = "Projects"
+  url = "/projects/"
+  weight = 20
+[[languages.en.menu.main]]
+  identifier = "posts"
+  name = "Blog"
+  url = "/posts/"
+  weight = 30
+[[languages.en.menu.main]]
+  identifier = "resume"
+  name = "Resume"
+  url = "/resume/"
+  weight = 40
+
+# Spanish Menu
+[[languages.es.menu.main]]
+  identifier = "about"
+  name = "Acerca de"
+  url = "/es/about/"
+  weight = 10
+[[languages.es.menu.main]]
+  identifier = "projects"
+  name = "Proyectos"
+  url = "/es/projects/"
+  weight = 20
+[[languages.es.menu.main]]
+  identifier = "posts"
+  name = "Blog"
+  url = "/es/posts/"
+  weight = 30
+[[languages.es.menu.main]]
+  identifier = "resume"
+  name = "Currículum"
+  url = "/es/resume/"
+  weight = 40

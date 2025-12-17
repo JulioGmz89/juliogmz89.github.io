@@ -22,8 +22,8 @@ draft = false
 
 *   **Core Languages:** C#, C++, Java, Python, JavaScript, PL/SQL.
 *   **Game Development:** Unity, Unreal Engine, Photon (P2P), Netcode for GameObjects.
-*   **Enterprise & Web:** .NET Ecosystem, React, REST APIs, MVVM Pattern, Oracle Database, HTML/CSS/Bootstrap, WordPress.
-*   **Tools & DevOps:** Git (Version Control), Jira, CI/CD Pipelines, Figma, Adobe Suite.
+*   **Enterprise & Web:** .NET, React, REST APIs, MVVM Pattern, Oracle Database, HTML/CSS/Bootstrap, WordPress.
+*   **Tools & DevOps:** Git, Jira, CI/CD Pipelines, Figma, Adobe Suite.
 *   **AI & Productivity:** Prompt Engineering, GitHub Copilot, LLM-Integration (Gemini/OpenAI APIs), AI-Assisted Architecture.
 <br>
 

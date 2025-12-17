@@ -33,7 +33,7 @@ Since childhood, video games have been my safe place of comfort and joy. In my t
 
 I'm deeply interested in artificial intelligence and its transformative potential. I have hands-on experience with LLM technologies and a variety of service and model options, including OpenAI, Anthropic, and open weights models. I enjoy exploring new tech stacks and integrating AI to enhance both games and productivity tools.
 
-## Beyond the Code
+## Hobbies
 
 I love video games (especially League of Legends!), anime, and spending time with my cat. I'm always eager to experiment with new genres, discover emerging technologies, and turn ideas into reality from scratch—it's the reason I chose computer science in the first place.
 
