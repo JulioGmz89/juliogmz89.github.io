@@ -10,6 +10,7 @@ defaultContentLanguage = 'en'
     title = 'Julio César Gómez González'
     [languages.en.params]
       displayName = 'English'
+      dateFormat = '2006'
 
   [languages.es]
     languageCode = 'es'
@@ -18,6 +19,7 @@ defaultContentLanguage = 'en'
     title = 'Julio César Gómez González'
     [languages.es.params]
       displayName = 'Español'
+      dateFormat = '2006'
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -76,11 +78,11 @@ defaultContentLanguage = 'en'
   name = "Projects"
   url = "/projects/"
   weight = 20
-[[languages.en.menu.main]]
-  identifier = "posts"
-  name = "Blog"
-  url = "/posts/"
-  weight = 30
+# [[languages.en.menu.main]]
+#   identifier = "posts"
+#   name = "Blog"
+#   url = "/posts/"
+#   weight = 30
 [[languages.en.menu.main]]
   identifier = "resume"
   name = "Resume"
@@ -98,11 +100,11 @@ defaultContentLanguage = 'en'
   name = "Proyectos"
   url = "/es/projects/"
   weight = 20
-[[languages.es.menu.main]]
-  identifier = "posts"
-  name = "Blog"
-  url = "/es/posts/"
-  weight = 30
+# [[languages.es.menu.main]]
+#   identifier = "posts"
+#   name = "Blog"
+#   url = "/es/posts/"
+#   weight = 30
 [[languages.es.menu.main]]
   identifier = "resume"
   name = "Currículum"
