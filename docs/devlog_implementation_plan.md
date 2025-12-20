@@ -88,74 +88,81 @@ Añadir al menú:
 
 ---
 
-## 3. Herramienta CLI Externa
+## 3. Herramienta Gráfica: portfolio-tools
 
 ### 3.1 Tecnología Seleccionada
 
-**Node.js CLI** con las siguientes librerías:
+**Web App Local** con Express + HTML/CSS/JS
 
 | Librería | Propósito |
 |----------|-----------|
-| `commander` | Framework CLI para comandos y opciones |
-| `inquirer` | Prompts interactivos |
+| `express` | Servidor web local |
+| `multer` | Manejo de uploads de imágenes |
 | `simple-git` | Operaciones Git |
 | `slugify` | Generación de slugs URL-friendly |
 | `fs-extra` | Operaciones de archivos mejoradas |
-| `chalk` | Colores en terminal |
+| `open` | Abrir navegador automáticamente |
 | `date-fns` | Manejo de fechas |
 
-**Ventajas de Node.js:**
-- NPM ecosystem robusto
-- Multiplataforma (Windows, Mac, Linux)
-- Fácil distribución via `npm install -g`
-- Mismo lenguaje que muchos proyectos web
+**Ventajas:**
+- Interfaz gráfica amigable en el navegador
+- Drag & drop para imágenes/GIFs
+- Preview en tiempo real del contenido
+- Tema visual consistente con el portafolio (noir/dark)
+- Ligero y rápido de desarrollar
 
 ### 3.2 Funcionalidades de la Herramienta
 
-```bash
-# Crear nueva entrada
-devlog new --title "Mi Entrada" --body "Hoy trabajé en..." --date "2025-12-20"
+**Interfaz gráfica con:**
+- Campo de título
+- Editor de contenido Markdown con preview
+- Selector de fecha (default: hoy)
+- Zona de drag & drop para imágenes/GIFs
+- Vista previa de imágenes adjuntas
+- Botón "Guardar Borrador" (sin push)
+- Botón "Publicar" (con git push automático)
+- Indicador de estado de publicación
 
-# Crear con imágenes
-devlog new --title "Progreso" --body "content.md" --images ./screenshot1.png ./demo.gif
-
-# Modo interactivo
-devlog new --interactive
-```
+**Tema visual:**
+- Modo oscuro (noir) consistente con el portafolio
+- Colores: fondo oscuro, acentos en tonos neutros
+- Tipografía limpia y moderna
 
 ### 3.3 Flujo de la Herramienta
 
 ```
-1. Usuario ejecuta: npx devlog-tool new
-2. Herramienta pregunta (modo interactivo):
-   - Título
-   - Cuerpo (texto directo o archivo .md)
+1. Usuario ejecuta: npm start (en carpeta portfolio-tools)
+2. Se abre automáticamente http://localhost:3000 en el navegador
+3. Usuario llena el formulario:
+   - Título de la entrada
+   - Contenido en Markdown (con preview en vivo)
    - Fecha (default: hoy)
-   - Imágenes/GIFs a adjuntar
-3. Herramienta:
-   a. Crea carpeta: content/devlog/YYYY-MM-DD-{slug}/
+   - Arrastra imágenes/GIFs a la zona de drop
+4. Usuario hace click en "Publicar":
+   a. Backend crea carpeta: content/devlog/YYYY-MM-DD-{slug}/
    b. Genera index.md con front matter
    c. Copia imágenes a la carpeta
    d. Ejecuta git add, commit, push
-4. GitHub Actions despliega automáticamente
+   e. Muestra notificación de éxito
+5. GitHub Actions despliega automáticamente
 ```
 
-### 3.4 Estructura del Proyecto CLI
+### 3.4 Estructura del Proyecto
 
 ```
-devlog-tool/
-├── src/
-│   ├── index.js         # Entry point CLI
-│   ├── commands/
-│   │   └── new.js       # Comando "new"
-│   ├── lib/
-│   │   ├── generator.js # Generación de archivos MD
-│   │   ├── git.js       # Operaciones Git
-│   │   └── prompts.js   # Prompts interactivos
-│   └── utils/
-│       └── helpers.js   # Utilidades
+portfolio-tools/
+├── server.js              # Express server + API endpoints
+├── public/
+│   ├── index.html         # Interfaz principal
+│   ├── css/
+│   │   └── style.css      # Estilos (tema noir/dark)
+│   └── js/
+│       └── app.js         # Lógica frontend
+├── lib/
+│   ├── generator.js       # Generación de archivos MD
+│   └── git.js             # Operaciones Git
+├── uploads/               # Carpeta temporal para imágenes
 ├── package.json
-├── .gitignore
 └── README.md
 ```
 
@@ -223,15 +230,15 @@ Mañana trabajaré en la detección de superficies curvas.
 3. ✅ Actualizar `hugo.toml` con menú de devlog
 4. ✅ Crear entrada de ejemplo para testing
 
-### Fase 2: Herramienta CLI Node.js (2-3 horas)
+### Fase 2: Herramienta Gráfica portfolio-tools (2-3 horas)
 
 1. Crear proyecto Node.js con `npm init`
-2. Instalar dependencias (`commander`, `inquirer`, `simple-git`, etc.)
-3. Implementar estructura de comandos
-4. Implementar generación de archivos Markdown
-5. Implementar copia de imágenes
-6. Implementar operaciones Git (add, commit, push)
-7. Crear modo interactivo con `inquirer`
+2. Instalar dependencias (`express`, `multer`, `simple-git`, etc.)
+3. Implementar servidor Express con API endpoints
+4. Crear interfaz HTML con tema noir/dark
+5. Implementar drag & drop para imágenes
+6. Implementar lógica de generación de archivos Markdown
+7. Implementar operaciones Git (add, commit, push)
 8. Testing local
 
 ### Fase 3: Documentación y Refinamiento (30 min)
@@ -242,225 +249,233 @@ Mañana trabajaré en la detección de superficies curvas.
 
 ---
 
-## 6. Código de la Herramienta CLI (Node.js)
+## 6. Código de la Herramienta (portfolio-tools)
 
 ### 6.1 package.json
 
 ```json
 {
-  "name": "devlog-tool",
+  "name": "portfolio-tools",
   "version": "1.0.0",
-  "description": "CLI tool para gestionar entradas del devlog",
+  "description": "Herramienta gráfica para gestionar el portafolio y devlog",
   "type": "module",
-  "bin": {
-    "devlog": "./src/index.js"
-  },
+  "main": "server.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node server.js",
+    "dev": "node --watch server.js"
   },
   "dependencies": {
-    "chalk": "^5.3.0",
-    "commander": "^12.0.0",
     "date-fns": "^3.0.0",
+    "express": "^4.18.0",
     "fs-extra": "^11.2.0",
-    "inquirer": "^9.2.0",
+    "multer": "^1.4.5-lts.1",
+    "open": "^10.0.0",
     "simple-git": "^3.22.0",
     "slugify": "^1.6.6"
   }
 }
 ```
 
-### 6.2 src/index.js (Entry Point)
+### 6.2 server.js
 
 ```javascript
-#!/usr/bin/env node
-import { Command } from 'commander';
-import { newEntry } from './commands/new.js';
+import express from 'express';
+import multer from 'multer';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import open from 'open';
+import { createDevlogEntry } from './lib/generator.js';
+import { publishToGit } from './lib/git.js';
 
-const program = new Command();
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const app = express();
+const PORT = 3000;
 
-program
-  .name('devlog')
-  .description('Herramienta para gestionar entradas del devlog')
-  .version('1.0.0');
+// Configuración
+const REPO_PATH = 'c:/Users/julio/Documents/GitHub/juliogmz89.github.io';
 
-program
-  .command('new')
-  .description('Crea una nueva entrada de devlog')
-  .option('-t, --title <title>', 'Título de la entrada')
-  .option('-b, --body <body>', 'Cuerpo del post o ruta a archivo .md')
-  .option('-d, --date <date>', 'Fecha (YYYY-MM-DD), default: hoy')
-  .option('-i, --images <images...>', 'Imágenes a adjuntar')
-  .option('--draft', 'Guardar como borrador (no publicar)')
-  .option('--no-push', 'No hacer push automático')
-  .action(newEntry);
+// Middleware
+app.use(express.json());
+app.use(express.static(path.join(__dirname, 'public')));
 
-program.parse();
+// Configurar multer para uploads
+const storage = multer.diskStorage({
+  destination: path.join(__dirname, 'uploads'),
+  filename: (req, file, cb) => {
+    const uniqueName = `${Date.now()}-${file.originalname}`;
+    cb(null, uniqueName);
+  }
+});
+const upload = multer({ storage });
+
+// API: Crear entrada de devlog
+app.post('/api/devlog', upload.array('images'), async (req, res) => {
+  try {
+    const { title, body, date, publish } = req.body;
+    const images = req.files || [];
+    
+    const entryPath = await createDevlogEntry({
+      title,
+      body,
+      date,
+      images,
+      repoPath: REPO_PATH,
+      draft: publish !== 'true'
+    });
+    
+    if (publish === 'true') {
+      await publishToGit(REPO_PATH, entryPath, title);
+    }
+    
+    res.json({ 
+      success: true, 
+      message: publish === 'true' ? '¡Publicado!' : 'Guardado como borrador',
+      path: entryPath 
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// Iniciar servidor
+app.listen(PORT, () => {
+  console.log(`🚀 Portfolio Tools corriendo en http://localhost:${PORT}`);
+  open(`http://localhost:${PORT}`);
+});
 ```
 
-### 6.3 src/commands/new.js
+### 6.3 lib/generator.js
 
 ```javascript
-import inquirer from 'inquirer';
-import chalk from 'chalk';
-import { format } from 'date-fns';
-import slugify from 'slugify';
 import path from 'path';
 import fs from 'fs-extra';
-import { simpleGit } from 'simple-git';
+import slugify from 'slugify';
+import { format } from 'date-fns';
 
-const REPO_PATH = 'c:/Users/julio/Documents/GitHub/juliogmz89.github.io';
-const DEVLOG_PATH = path.join(REPO_PATH, 'content', 'devlog');
-
-export async function newEntry(options) {
-  try {
-    // Modo interactivo si faltan opciones
-    const answers = await promptMissingOptions(options);
-    
-    // Crear entrada
-    const entryPath = await createEntry(answers);
-    console.log(chalk.green(`✅ Entrada creada: ${entryPath}`));
-    
-    // Git operations
-    if (!answers.draft && answers.push !== false) {
-      await publishEntry(entryPath, answers.title);
-      console.log(chalk.blue('🚀 Publicado y desplegado!'));
-    } else if (answers.draft) {
-      console.log(chalk.yellow('📝 Guardado como borrador (no publicado)'));
-    }
-  } catch (error) {
-    console.error(chalk.red('Error:', error.message));
-    process.exit(1);
-  }
-}
-
-async function promptMissingOptions(options) {
-  const questions = [];
-  
-  if (!options.title) {
-    questions.push({
-      type: 'input',
-      name: 'title',
-      message: 'Título de la entrada:',
-      validate: (input) => input.length > 0 || 'El título es requerido'
-    });
-  }
-  
-  if (!options.body) {
-    questions.push({
-      type: 'editor',
-      name: 'body',
-      message: 'Contenido de la entrada (se abrirá editor):',
-    });
-  }
-  
-  if (!options.date) {
-    questions.push({
-      type: 'input',
-      name: 'date',
-      message: 'Fecha (YYYY-MM-DD):',
-      default: format(new Date(), 'yyyy-MM-dd')
-    });
-  }
-  
-  if (!options.images) {
-    questions.push({
-      type: 'input',
-      name: 'imagesInput',
-      message: 'Rutas de imágenes (separadas por coma, o vacío):',
-    });
-  }
-  
-  const answers = await inquirer.prompt(questions);
-  
-  // Procesar imágenes del input
-  if (answers.imagesInput) {
-    answers.images = answers.imagesInput
-      .split(',')
-      .map(s => s.trim())
-      .filter(s => s.length > 0);
-  }
-  
-  return { ...options, ...answers };
-}
-
-async function createEntry(options) {
-  const { title, body, date, images = [], draft } = options;
-  
-  // Parsear fecha
+export async function createDevlogEntry({ title, body, date, images, repoPath, draft }) {
   const entryDate = date ? new Date(date) : new Date();
-  
-  // Crear slug y carpeta
   const slug = slugify(title, { lower: true, strict: true });
   const folderName = `${format(entryDate, 'yyyy-MM-dd')}-${slug}`;
-  const entryPath = path.join(DEVLOG_PATH, folderName);
+  const devlogPath = path.join(repoPath, 'content', 'devlog');
+  const entryPath = path.join(devlogPath, folderName);
   
   await fs.ensureDir(entryPath);
   
-  // Procesar cuerpo
-  let bodyContent = body;
-  if (body && await fs.pathExists(body) && body.endsWith('.md')) {
-    bodyContent = await fs.readFile(body, 'utf-8');
-  }
-  
-  // Procesar imágenes
+  // Copiar imágenes y generar markdown
   let imageMarkdown = '';
-  for (const imgPath of images) {
-    if (await fs.pathExists(imgPath)) {
-      const imgName = path.basename(imgPath);
-      const dest = path.join(entryPath, imgName);
-      await fs.copy(imgPath, dest);
-      const imgStem = path.parse(imgName).name;
-      imageMarkdown += `\n![${imgStem}](${imgName})\n`;
-    }
+  for (const img of images) {
+    const destName = img.originalname;
+    const dest = path.join(entryPath, destName);
+    await fs.move(img.path, dest, { overwrite: true });
+    const imgStem = path.parse(destName).name;
+    imageMarkdown += `\n![${imgStem}](${destName})\n`;
   }
   
-  // Generar contenido
-  const frontMatter = `+++
+  // Generar front matter
+  const content = `+++
 date = '${entryDate.toISOString()}'
 title = '${title}'
-draft = ${draft ? 'true' : 'false'}
+draft = ${draft}
 showTableOfContents = false
 showReadingTime = true
 showAuthor = false
 +++
 
-${bodyContent}
+${body}
 ${imageMarkdown}`;
   
-  // Escribir archivo
-  const indexFile = path.join(entryPath, 'index.md');
-  await fs.writeFile(indexFile, frontMatter, 'utf-8');
+  await fs.writeFile(path.join(entryPath, 'index.md'), content, 'utf-8');
   
   return entryPath;
 }
+```
 
-async function publishEntry(entryPath, title) {
-  const git = simpleGit(REPO_PATH);
-  
-  // Obtener ruta relativa
-  const relativePath = path.relative(REPO_PATH, entryPath);
+### 6.4 lib/git.js
+
+```javascript
+import { simpleGit } from 'simple-git';
+import path from 'path';
+
+export async function publishToGit(repoPath, entryPath, title) {
+  const git = simpleGit(repoPath);
+  const relativePath = path.relative(repoPath, entryPath);
   
   await git.add(relativePath);
   await git.commit(`devlog: ${title}`);
-  await git.push('origin', 'master');
+  await git.push('origin', 'develop'); // Cambiar a 'master' para producción
 }
 ```
 
-### 6.4 Instalación y Uso
+### 6.5 public/index.html (Estructura básica)
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Tools - Devlog</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📝 Portfolio Tools</h1>
+      <p>Gestor de Devlog</p>
+    </header>
+    
+    <main>
+      <form id="devlog-form">
+        <div class="form-group">
+          <label for="title">Título</label>
+          <input type="text" id="title" name="title" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="date">Fecha</label>
+          <input type="date" id="date" name="date">
+        </div>
+        
+        <div class="form-group">
+          <label for="body">Contenido (Markdown)</label>
+          <textarea id="body" name="body" rows="10" required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label>Imágenes / GIFs</label>
+          <div id="drop-zone" class="drop-zone">
+            <p>Arrastra imágenes aquí o haz click para seleccionar</p>
+            <input type="file" id="images" name="images" multiple accept="image/*,.gif">
+          </div>
+          <div id="preview" class="image-preview"></div>
+        </div>
+        
+        <div class="actions">
+          <button type="button" id="btn-draft" class="btn secondary">Guardar Borrador</button>
+          <button type="submit" id="btn-publish" class="btn primary">Publicar</button>
+        </div>
+      </form>
+    </main>
+    
+    <div id="notification" class="notification hidden"></div>
+  </div>
+  
+  <script src="js/app.js"></script>
+</body>
+</html>
+```
+
+### 6.6 Instalación y Uso
 
 ```bash
-# Desde la carpeta devlog-tool
+# Desde la carpeta portfolio-tools
 npm install
 
-# Instalar globalmente (opcional)
-npm link
+# Iniciar la herramienta
+npm start
 
-# Uso
-devlog new                           # Modo interactivo
-devlog new -t "Mi Título" -b "Contenido aquí"
-devlog new -t "Con imágenes" -b "Texto" -i ./foto1.png ./demo.gif
-devlog new --draft                   # Solo guardar, no publicar
+# Se abrirá automáticamente en http://localhost:3000
 ```
 
 ---
@@ -526,16 +541,18 @@ git config --global credential.helper manager
 
 ## Checklist de Implementación
 
-- [ ] Crear `content/devlog/_index.md`
-- [ ] Crear `content/devlog/_index.es.md`
-- [ ] Actualizar `hugo.toml` con menú devlog
-- [ ] Crear entrada de ejemplo
-- [ ] Probar build local con `hugo server`
-- [ ] Crear proyecto Node.js para CLI (`npm init`)
+- [x] Crear `content/devlog/_index.md`
+- [x] Crear `content/devlog/_index.es.md`
+- [x] Actualizar `hugo.toml` con menú devlog
+- [x] Crear entrada de ejemplo
+- [x] Probar build local con `hugo server`
+- [ ] Crear proyecto Node.js portfolio-tools (`npm init`)
 - [ ] Instalar dependencias (`npm install`)
-- [ ] Implementar comando `new`
+- [ ] Implementar servidor Express con API
+- [ ] Crear interfaz HTML con tema noir/dark
+- [ ] Implementar drag & drop para imágenes
 - [ ] Testing de publicación
-- [ ] Documentar uso en README
+- [ ] Documentar uso en README en README
 
 ---
 

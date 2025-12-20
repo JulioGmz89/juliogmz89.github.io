@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-tools",
+  "version": "1.0.0",
+  "description": "Herramienta gráfica para gestionar el portafolio y devlog",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": ["devlog", "portfolio", "hugo"],
+  "author": "Julio César Gómez González",
+  "license": "MIT",
+  "dependencies": {
+    "date-fns": "^3.0.0",
+    "express": "^4.18.0",
+    "fs-extra": "^11.2.0",
+    "multer": "^1.4.5-lts.1",
+    "open": "^10.0.0",
+    "simple-git": "^3.22.0",
+    "slugify": "^1.6.6"
+  }
+}
