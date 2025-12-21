@@ -1,5 +1,5 @@
 +++
-date = '2025-12-20T12:00:00-06:00'
+date = '2025-12-20T00:00:00-06:00'
 title = 'Setting Up the Devlog System'
 draft = false
 summary = 'First entry! Today I implemented a devlog system for my portfolio to track development progress.'

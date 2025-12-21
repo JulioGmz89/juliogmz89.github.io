@@ -36,6 +36,7 @@ defaultContentLanguage = 'en'
   dateFormat = "2006"
   enableSearch = true
   defaultBackgroundImage = "images/background/homepage-background.jpg"
+  mainSections = ["projects"]
   
   [params.header]
     layout = 'fixed'

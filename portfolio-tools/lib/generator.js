@@ -7,8 +7,10 @@ import { format } from 'date-fns';
  * Crea una nueva entrada de devlog
  */
 export async function createDevlogEntry({ title, body, date, images, repoPath, draft }) {
-  // Parsear fecha
-  const entryDate = date ? new Date(date + 'T12:00:00') : new Date();
+  // Parsear fecha - usar medianoche para evitar problemas de fecha futura
+  const entryDate = date ? new Date(date + 'T00:00:00-06:00') : new Date();
+  // Formatear fecha para Hugo (usar formato con timezone local)
+  const dateStr = format(entryDate, "yyyy-MM-dd'T'00:00:00'-06:00'");
   
   // Crear slug y nombre de carpeta
   const slug = slugify(title, { lower: true, strict: true });
@@ -41,7 +43,7 @@ export async function createDevlogEntry({ title, body, date, images, repoPath, d
   
   // Generar contenido del archivo
   const content = `+++
-date = '${entryDate.toISOString()}'
+date = '${dateStr}'
 title = '${escapeTomlString(title)}'
 draft = ${draft}
 showTableOfContents = false
