@@ -2,7 +2,7 @@ import { simpleGit } from 'simple-git';
 import path from 'path';
 
 /**
- * Obtiene el estado actual del repositorio Git
+ * Gets the current Git repository status
  */
 export async function getGitStatus(repoPath) {
   const git = simpleGit(repoPath);
@@ -20,25 +20,25 @@ export async function getGitStatus(repoPath) {
 }
 
 /**
- * Publica la entrada al repositorio Git
+ * Publishes the entry to the Git repository
  */
 export async function publishToGit(repoPath, entryPath, title) {
   const git = simpleGit(repoPath);
   
-  // Obtener rama actual
+  // Get current branch
   const branch = await git.revparse(['--abbrev-ref', 'HEAD']);
   
-  // Obtener ruta relativa para el commit
+  // Get relative path for commit
   const relativePath = path.relative(repoPath, entryPath);
   
-  // Agregar archivos
+  // Add files
   await git.add(relativePath);
   
-  // Commit con mensaje descriptivo
+  // Commit with descriptive message
   const commitMessage = `devlog: ${title}`;
   await git.commit(commitMessage);
   
-  // Push a la rama actual
+  // Push to current branch
   await git.push('origin', branch.trim());
   
   return {
@@ -48,22 +48,22 @@ export async function publishToGit(repoPath, entryPath, title) {
 }
 
 /**
- * Elimina una entrada del repositorio y hace push
+ * Deletes an entry from the repository and pushes
  */
 export async function deleteFromGit(repoPath, relativePath, title) {
   const git = simpleGit(repoPath);
   
-  // Obtener rama actual
+  // Get current branch
   const branch = await git.revparse(['--abbrev-ref', 'HEAD']);
   
-  // Eliminar archivos del índice de git
+  // Remove files from git index
   await git.rm(['-r', relativePath]);
   
-  // Commit con mensaje descriptivo
-  const commitMessage = `devlog: eliminar "${title}"`;
+  // Commit with descriptive message
+  const commitMessage = `devlog: delete "${title}"`;
   await git.commit(commitMessage);
   
-  // Push a la rama actual
+  // Push to current branch
   await git.push('origin', branch.trim());
   
   return {

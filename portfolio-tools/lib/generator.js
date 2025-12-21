@@ -4,44 +4,44 @@ import slugify from 'slugify';
 import { format } from 'date-fns';
 
 /**
- * Crea una nueva entrada de devlog
+ * Creates a new devlog entry
  */
 export async function createDevlogEntry({ title, body, date, images, repoPath, draft }) {
-  // Parsear fecha - usar medianoche para evitar problemas de fecha futura
+  // Parse date - use midnight to avoid future date issues
   const entryDate = date ? new Date(date + 'T00:00:00-06:00') : new Date();
-  // Formatear fecha para Hugo (usar formato con timezone local)
+  // Format date for Hugo (use format with local timezone)
   const dateStr = format(entryDate, "yyyy-MM-dd'T'00:00:00'-06:00'");
   
-  // Crear slug y nombre de carpeta
+  // Create slug and folder name
   const slug = slugify(title, { lower: true, strict: true });
   const folderName = `${format(entryDate, 'yyyy-MM-dd')}-${slug}`;
   const devlogPath = path.join(repoPath, 'content', 'devlog');
   const entryPath = path.join(devlogPath, folderName);
   
-  // Asegurar que existe la carpeta
+  // Ensure folder exists
   await fs.ensureDir(entryPath);
   
-  // Copiar imágenes y generar markdown para ellas
+  // Copy images and generate markdown for them
   let imageMarkdown = '';
   
   if (images && images.length > 0) {
-    imageMarkdown = '\n## Imágenes\n';
+    imageMarkdown = '\n## Images\n';
     
     for (const img of images) {
-      // Usar el nombre original del archivo
+      // Use original filename
       const originalName = img.originalname;
       const destPath = path.join(entryPath, originalName);
       
-      // Copiar imagen desde uploads a la carpeta de la entrada
+      // Copy image from uploads to entry folder
       await fs.copy(img.path, destPath);
       
-      // Generar alt text del nombre del archivo
+      // Generate alt text from filename
       const altText = path.parse(originalName).name.replace(/[-_]/g, ' ');
       imageMarkdown += `\n![${altText}](${originalName})\n`;
     }
   }
   
-  // Generar contenido del archivo
+  // Generate file content
   const content = `+++
 date = '${dateStr}'
 title = '${escapeTomlString(title)}'
@@ -54,7 +54,7 @@ showAuthor = false
 ${body}
 ${imageMarkdown}`;
   
-  // Escribir archivo index.md
+  // Write index.md file
   const indexPath = path.join(entryPath, 'index.md');
   await fs.writeFile(indexPath, content, 'utf-8');
   
@@ -62,7 +62,7 @@ ${imageMarkdown}`;
 }
 
 /**
- * Escapa caracteres especiales para TOML
+ * Escapes special characters for TOML
  */
 function escapeTomlString(str) {
   return str.replace(/'/g, "\\'").replace(/"/g, '\\"');
