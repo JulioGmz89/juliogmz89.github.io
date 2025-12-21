@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 import fs from 'fs-extra';
 import open from 'open';
 import { createDevlogEntry } from './lib/generator.js';
-import { publishToGit, getGitStatus } from './lib/git.js';
+import { publishToGit, getGitStatus, deleteFromGit } from './lib/git.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -152,6 +152,47 @@ app.get('/api/devlog', async (req, res) => {
     
     res.json({ success: true, entries });
   } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// API: Eliminar entrada de devlog
+app.delete('/api/devlog/:folder', async (req, res) => {
+  try {
+    const { folder } = req.params;
+    
+    // Validar que el folder no tenga caracteres peligrosos
+    if (!folder || folder.includes('..') || folder.includes('/') || folder.includes('\\')) {
+      return res.status(400).json({ success: false, error: 'Nombre de carpeta inválido' });
+    }
+    
+    const devlogPath = path.join(REPO_PATH, 'content', 'devlog');
+    const entryPath = path.join(devlogPath, folder);
+    const relativePath = path.join('content', 'devlog', folder);
+    
+    // Verificar que existe
+    if (!await fs.pathExists(entryPath)) {
+      return res.status(404).json({ success: false, error: 'Entrada no encontrada' });
+    }
+    
+    // Obtener título para el mensaje de commit
+    const indexPath = path.join(entryPath, 'index.md');
+    let title = folder;
+    if (await fs.pathExists(indexPath)) {
+      const content = await fs.readFile(indexPath, 'utf-8');
+      const titleMatch = content.match(/title\s*=\s*['"](.+?)['"]/);
+      if (titleMatch) title = titleMatch[1];
+    }
+    
+    // Eliminar del git y hacer push
+    await deleteFromGit(REPO_PATH, relativePath, title);
+    
+    res.json({ 
+      success: true, 
+      message: `Entrada "${title}" eliminada exitosamente`
+    });
+  } catch (error) {
+    console.error('Error deleting devlog entry:', error);
     res.status(500).json({ success: false, error: error.message });
   }
 });
