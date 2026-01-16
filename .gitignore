@@ -11,3 +11,6 @@ Thumbs.db
 # Editor directories
 .vscode/
 .idea/
+# Node.js (portfolio-tools)
+portfolio-tools/node_modules/
+portfolio-tools/uploads/
