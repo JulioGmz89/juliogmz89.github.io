@@ -71,6 +71,5 @@ Minor in Video Game Design for Engineering
 ### CERTIFICATIONS
 
 *   Career Essentials in GitHub Copilot (GitHub)
-*   Building AI Products: Prototyping Essentials (LinkedIn Learning)
 *   Start Writing Prompts like a Pro (Google)
 *   C++ Fundamentals I and II (Pearson)
