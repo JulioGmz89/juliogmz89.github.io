@@ -2,6 +2,7 @@
 date = '2025-07-24T00:00:00-06:00'
 title = 'Implement rotation with input system support'
 draft = false
+tags = ['Shape Wars']
 showTableOfContents = false
 showReadingTime = true
 showAuthor = false

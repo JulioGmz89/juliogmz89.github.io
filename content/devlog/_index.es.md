@@ -2,7 +2,7 @@
 title = "Devlog"
 description = "Entradas del diario de desarrollo siguiendo el progreso, desafíos e ideas de mis proyectos de desarrollo de videojuegos."
 showTableOfContents = false
-showDate = false
+showDate = true
 showAuthor = false
 showReadingTime = false
 groupByYear = true

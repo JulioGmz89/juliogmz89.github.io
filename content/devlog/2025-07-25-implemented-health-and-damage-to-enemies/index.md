@@ -2,6 +2,7 @@
 date = '2025-07-25T00:00:00-06:00'
 title = 'Implemented health and damage to enemies'
 draft = false
+tags = ['Shape Wars']
 showTableOfContents = false
 showReadingTime = true
 showAuthor = false

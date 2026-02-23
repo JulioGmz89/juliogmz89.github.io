@@ -2,6 +2,7 @@
 date = '2025-07-28T00:00:00-06:00'
 title = 'Implemented Shield Power Up'
 draft = false
+tags = ['Shape Wars']
 showTableOfContents = false
 showReadingTime = true
 showAuthor = false
