@@ -1,6 +1,7 @@
 baseURL = 'https://juliogmz89.github.io/'
 theme = 'blowfish'
 defaultContentLanguage = 'en'
+timeout = "5m"
 
 [languages]
   [languages.en]
@@ -36,6 +37,7 @@ defaultContentLanguage = 'en'
   dateFormat = "2006"
   enableSearch = true
   defaultBackgroundImage = "images/background/homepage-background.jpg"
+  disableImageOptimizationMD = true
   
   [params.header]
     layout = 'fixed'
