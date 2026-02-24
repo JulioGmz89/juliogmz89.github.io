@@ -33,6 +33,22 @@
           {{ end }}
         {{ end }}
       </div>
+      {{/* Tags / Taxonomies */}}
+      {{ if .Params.showTaxonomies | default (site.Params.article.showTaxonomies | default false) }}
+        <div class="flex flex-row flex-wrap items-center mb-4">
+          {{ range $taxonomy, $terms := site.Taxonomies }}
+            {{ if and (ne $taxonomy "authors") (ne $taxonomy "series") }}
+              {{ with $.GetTerms $taxonomy }}
+                {{ range . }}
+                  <a class="relative me-2 mb-1" href="{{ .RelPermalink }}">
+                    {{ partial "badge.html" .LinkTitle }}
+                  </a>
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        </div>
+      {{ end }}
       {{ if not (.Params.showAuthorBottom | default (site.Params.article.showAuthorBottom | default false)) }}
         {{ template "SingleAuthor" . }}
       {{ end }}

@@ -2,6 +2,7 @@
 date = '2025-08-19T00:00:00-06:00'
 title = 'Camera Rework and Crosshair Implementation'
 draft = false
+tags = ['Shape Wars']
 showTableOfContents = false
 showReadingTime = true
 showAuthor = false

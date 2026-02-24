@@ -2,6 +2,7 @@
 date = '2025-12-23T00:00:00-06:00'
 title = 'Off-Screen Indicator System Added'
 draft = false
+tags = ['Shape Wars']
 showTableOfContents = false
 showReadingTime = true
 showAuthor = false

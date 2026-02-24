@@ -2,6 +2,7 @@
 date = '2025-12-27T00:00:00-06:00'
 title = 'Main Menu, Pause Menu, and Death Screen Added'
 draft = false
+tags = ['Shape Wars']
 showTableOfContents = false
 showReadingTime = true
 showAuthor = false
