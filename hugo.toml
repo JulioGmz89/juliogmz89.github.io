@@ -36,6 +36,7 @@ defaultContentLanguage = 'en'
   dateFormat = "2006"
   enableSearch = true
   defaultBackgroundImage = "images/background/homepage-background.jpg"
+  mainSections = ["projects"]
   
   [params.header]
     layout = 'fixed'
@@ -78,6 +79,11 @@ defaultContentLanguage = 'en'
   name = "Projects"
   url = "/projects/"
   weight = 20
+[[languages.en.menu.main]]
+  identifier = "devlog"
+  name = "Devlog"
+  url = "/devlog/"
+  weight = 25
 # [[languages.en.menu.main]]
 #   identifier = "posts"
 #   name = "Blog"
@@ -100,6 +106,11 @@ defaultContentLanguage = 'en'
   name = "Proyectos"
   url = "/es/projects/"
   weight = 20
+[[languages.es.menu.main]]
+  identifier = "devlog"
+  name = "Devlog"
+  url = "/es/devlog/"
+  weight = 25
 # [[languages.es.menu.main]]
 #   identifier = "posts"
 #   name = "Blog"
