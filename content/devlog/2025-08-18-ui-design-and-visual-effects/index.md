@@ -10,7 +10,7 @@ showAuthor = false
 
 ## UI Elements Design in Illustrator
 
-Designed UI elements in Illustrator with a focus on minimalistic, geometric art to facilitate seamless in-game integration. The visual inspiration draws from the paper cut animation style of South Park and the vibrant aesthetics of Geometry Wars. For the color palette, I chose neon tones, aiming to create a glowing effect in the engine that enhances the low-light atmosphere.
+Designed UI elements in Illustrator with a focus on minimalistic, geometric art to facilitate seamless in-game integration. The visual inspiration draws from the paper cut animation style of South Park and the vibrant aesthetics of Geometry Wars. For the color palette, I chose neon tones, aiming to create a glowing effect in the game that enhances the low-light atmosphere.
 
 ![entry13](entry13.png)
 

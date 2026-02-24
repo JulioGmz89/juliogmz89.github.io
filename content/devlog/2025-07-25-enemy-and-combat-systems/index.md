@@ -16,13 +16,13 @@ Implemented a new enemy type that actively chases the player's position, with ad
 
 ## Shooter Enemy
 
-Implemented a Shooter Enemy with advanced behavior. This enemy can approach the player, retreat to maintain distance, and attack by shooting projectiles.
+Implemented a Shooter Enemy. This enemy can approach the player, retreat to maintain distance, and attack by shooting projectiles.
 
 ![entry10](entry10.gif)
 
 ## Health and Damage System
 
-Implemented health scripts for both the player and enemies, along with a damage dealer script that applies damage upon collision. This system is now used for bullets and the chaser enemy, enabling proper health management and interactions.
+Implemented health scripts for both the player and enemies, along with a damage dealer script that applies damage upon collision. This system is now used for bullets and the chaser enemy, enabling health management and interactions.
 
 ![entry9](entry9.gif)
 
