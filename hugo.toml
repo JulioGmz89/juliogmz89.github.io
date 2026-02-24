@@ -38,6 +38,7 @@ timeout = "5m"
   enableSearch = true
   defaultBackgroundImage = "images/background/homepage-background.jpg"
   disableImageOptimizationMD = true
+  mainSections = ["projects"]
   
   [params.header]
     layout = 'fixed'
