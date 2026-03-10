@@ -3,7 +3,7 @@ date = '2025-08-06T00:00:00-06:00'
 draft = false
 title = 'Shape Wars'
 summary = "An arcade-style 2D arena shooter built as a technical showcase for high-performance Object Pooling and smart camera systems in Unity."
-tags = ["Unity", "C#", "Performance Optimization"]
+tags = ["Unity", "C#", "Project Management"]
 +++
 
 <br>

@@ -13,14 +13,14 @@ timeout = "5m"
       displayName = 'English'
       dateFormat = '2006'
 
-  [languages.es]
-    languageCode = 'es'
-    languageName = 'Español'
-    weight = 2
-    title = 'Julio César Gómez González'
-    [languages.es.params]
-      displayName = 'Español'
-      dateFormat = '2006'
+  # [languages.es]
+  #   languageCode = 'es'
+  #   languageName = 'Español'
+  #   weight = 2
+  #   title = 'Julio César Gómez González'
+  #   [languages.es.params]
+  #     displayName = 'Español'
+  #     dateFormat = '2006'
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -97,29 +97,29 @@ timeout = "5m"
   url = "/resume/"
   weight = 40
 
-# Spanish Menu
-[[languages.es.menu.main]]
-  identifier = "about"
-  name = "Acerca de"
-  url = "/es/about/"
-  weight = 10
-[[languages.es.menu.main]]
-  identifier = "projects"
-  name = "Proyectos"
-  url = "/es/projects/"
-  weight = 20
-[[languages.es.menu.main]]
-  identifier = "devlog"
-  name = "Devlog"
-  url = "/es/devlog/"
-  weight = 25
+# Spanish Menu (temporarily disabled)
+# [[languages.es.menu.main]]
+#   identifier = "about"
+#   name = "Acerca de"
+#   url = "/es/about/"
+#   weight = 10
+# [[languages.es.menu.main]]
+#   identifier = "projects"
+#   name = "Proyectos"
+#   url = "/es/projects/"
+#   weight = 20
+# [[languages.es.menu.main]]
+#   identifier = "devlog"
+#   name = "Devlog"
+#   url = "/es/devlog/"
+#   weight = 25
 # [[languages.es.menu.main]]
 #   identifier = "posts"
 #   name = "Blog"
 #   url = "/es/posts/"
 #   weight = 30
-[[languages.es.menu.main]]
-  identifier = "resume"
-  name = "Currículum"
-  url = "/es/resume/"
-  weight = 40
+# [[languages.es.menu.main]]
+#   identifier = "resume"
+#   name = "Currículum"
+#   url = "/es/resume/"
+#   weight = 40
