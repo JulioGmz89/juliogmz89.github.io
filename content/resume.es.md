@@ -33,9 +33,10 @@ draft = false
 **Ingeniero de Software** | 2023 – Presente (2 Años)
 
 *   **Liderazgo Técnico:** Actué como el punto de contacto técnico principal para el cliente y lideré el ciclo de vida de desarrollo para un equipo de 3 desarrolladores, asegurando la calidad del código y la integridad arquitectónica de una aplicación financiera crítica en .NET.
-*   **Entrega End-to-End:** Diseñé el proceso completo de entrega de software, moviendo características desde la recopilación de requisitos y estimación de story points (Jira) hasta la implementación (C#/.NET) y despliegue a producción.
-*   **Modernización & Arquitectura:** Arquitecté modernizaciones clave para cumplir con estándares de seguridad empresarial, incluyendo la integración de protocolos de transferencia SFTP y asegurando compatibilidad con entornos de base de datos Oracle actualizados.
-*   **Gestión de Incidentes:** Lideré un esfuerzo de depuración multi-equipo para resolver una falla crítica de producción post-rollback. Identifiqué la causa raíz dentro de un paquete de base de datos complejo y desplegué una corrección, restaurando el 100% de estabilidad de la aplicación sin pérdida de datos.
+*   **Plataforma de Automatización de Documentos:** Construí y mantuve un sistema empresarial en C#/.NET que generaba reportes de fondos para bancos importantes y gestores de activos, con servidor multi-hilos, motor de plantillas basado en etiquetas, portal de administración ASP.NET MVC, y pipeline de distribución FTP/SFTP paralelo de alto rendimiento con pooling de conexiones.
+*   **Integración de Datos en Tiempo Real:** Integré APIs de streaming en tiempo real usando C#/.NET, implementando autenticación OAuth2, consumidores de protocolo WebSocket y RSSL, gestión del ciclo de vida de tokens, y validación de conectividad de APIs para una migración de datos de mercados financieros.
+*   **Datos e Integración de APIs:** Diseñé pipelines de datos alimentados por bases de datos Oracle, APIs SOAP/REST, y proveedores de datos financieros para entregar métricas de rendimiento, asignación y riesgo de fondos.
+*   **Gestión de Incidentes:** Lideré una depuración multi-equipo para resolver una falla crítica de producción post-rollback. Identifiqué la causa raíz dentro de un paquete de base de datos complejo y desplegué una corrección, restaurando el 100% de estabilidad de la aplicación sin pérdida de datos.
 <br>
 
 ## PROYECTOS DE DESARROLLO DE VIDEOJUEGOS

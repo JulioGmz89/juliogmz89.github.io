@@ -17,8 +17,9 @@
 **Software Engineer** | 2023 – Present (2 Years)
 
 *   **Technical Leadership:** Acted as the primary technical point of contact for the client and spearheaded the development lifecycle for a team of 3 developers, ensuring code quality and architectural integrity for a critical financial .NET application.
-*   **End-to-End Delivery:** Engineered the complete software delivery process, moving features from requirements gathering and story point estimation (Jira) to implementation (C#/.NET) and production deployment.
-*   **Modernization & Architecture:** Architected key modernizations to meet enterprise security standards, including the integration of SFTP transfer protocols and ensuring compatibility with upgraded Oracle database environments. 
+*   **Document Automation Platform:** Built and maintained an enterprise C#/.NET system generating fund factsheets for major banks and asset managers — featuring a multi-threaded server, tag-based templating engine (InDesign, Word, PowerPoint, PDF), ASP.NET MVC admin portal, and high-throughput parallel FTP distribution pipeline with connection pooling.
+*   **Real-Time Data Integration:** Integrated real-time streaming APIs using C#/.NET, implementing OAuth2 authentication, WebSocket and RSSL protocol consumers, token lifecycle management, and API connectivity validation for a financial market data migration.
+*   **Data & API Integration:** Engineered data pipelines sourcing from Oracle databases, SOAP/REST APIs, and financial data providers to deliver fund performance, allocation, and risk metrics.
 *   **Incident Management:** Led a multi-team debugging effort to resolve a critical production failure post-rollback. Identified the root cause within a complex database package and deployed a fix, restoring 100% application stability with zero data loss.
 ## GAME DEVELOPMENT PROJECTS
 
